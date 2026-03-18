@@ -59,3 +59,37 @@ nav a{
   .activity{
     margin-top: 60px;
   }
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* removes double borders */
+    background: white;
+    border-radius: 10px;
+    overflow: hidden; /* keeps rounded corners visible */
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+th, td {
+    padding: 12px 20px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: darkred;
+    color: white;
+  }
+  
+  td {
+    border-bottom: 1px solid #ddd;
+  }
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* light gray */
+  }
+  
+tr:nth-child(odd) {
+    background-color: white;
+  }
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
