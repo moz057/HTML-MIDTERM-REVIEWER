@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header class = "header">
+        <div class = "logo">
+            <p>ACE MEDICAL CENTER</p>
+        </div>
+        <nav>
+            <a href = "#profile">PROFILE</a>
+            <a href = "#VitalSigns">VITAL SIGNS</a>
+            <a href = "#Gallery">GALLERY</a>
+            <a href = "#ContactUs">CONTACT US</a>
+        </nav>
+
+    </header>
+
+    <section class="profile">
+
+        <h1>PATIENT PROFILE: J. Doe</h1>
+        <ul>
+            <li>DOB: 05/12/1978 (47 Years)</li>
+            <li>Admission Date: March 15, 2026</li>
+            <li>Primary Physician: Dr. Aris Thorne</li>
+        </ul>
+
+    </section>
+
+    <!-- 
+    
+    
+    VITAL SIGNS 
+    
+    
+    -->
+    <section class = "vital signs">
+
+        <h1>VITAL SIGNS</h1>
+
+        <article class = "card">
+            <h4>Heart Rate (ECG)</h4>
+            <ul>
+                <li>Value: 72 bpm</li>
+                <li>Trend: Stable</li>
+                <li>Alert Threshold: < 50 | > 120</li>
+            </ul>
+            <p><strong>Description:</strong> Sinus rhythm detected. No irregular PVCs noted in the last 6-hour window.</p>
+        </article>
+
+        <article class = "card">
+            <h4>Oxygen Saturation (SpO2)</h4>
+            <ul>
+                <li>Value: 98%</li>
+                <li>Trend: Optimal</li>
+                <li>Source: Finger Pulse Oximeter - Right Hand</li>
+            </ul>
+            <p><strong>Description:</strong> Room air. Patient maintaining saturation without supplemental O2</p>
+        </article>
+
+        <article class = "card">
+            <h4>Blood Pressure (NIBP)</h4>
+            <ul>
+                <li>Value: 120/80 mmHg</li>
+                <li>Trend: 93 mmHg</li>
+                <li>Last Reading: 4 minutes ago</li>
+            </ul>
+            <p><strong>Description:</strong> Within target clinical range for post-operative recovery.</p>
+        </article>
+
+        <article class = "card">
+            <h4>Core Temperature</h4>
+            <ul>
+                <li>Value: 37.1°C (98.8°F)</li>
+                <li>Status: Normothermic</li>
+                <li>Trend: Steady</li>
+            </ul>
+            <p><strong>Description:</strong> No febrile activity detected since admission.</p>
+        </article>
+    </section>
+
+       <!-- 
+    
+    
+    ACTIVE CLINICAL ALERTS
+    
+    
+    -->
+
+    <section>
+        <table>
+            <tr class = "tableheader">
+                <th>LOG TIME</th>
+                <th>LOG ACTIVITY</th>
+            </tr>
+            <tr class = "tablerow">
+                <td>[LOG 11:00 AM]:</td>
+                <td>Routine IV pump maintenance scheduled for 13:00.</td>
+            </tr>
+            <tr class = "tablerow">
+                <td>[LOG 10:45 AM]:</td>
+                <td>Laboratory results for Metabolic Panel (BMP) are now pending review.</td>
+            </tr>
+            <tr class = "tablerow">
+                <td>[LOG 08:30 AM]:</td>
+                <td>Morning rounds completed. Patient responsive and oriented x3.</td>
+            </tr>
+        </table>
+    </section>
+
+       <!-- 
+    
+    
+    SYSTEM QUICK ACTIONS
+    
+    
+    -->
+    <section>
+        
+        <article class = "actioncard">
+            <h3>Request Stat Nurse Assist</h3> 
+            <button type = "button" onclick="alert('Request Received, Nurse on their way')">Request</button>
+         </article>
+
+         <article class = "actioncard">
+            <h3>Download 24h Trend Report (PDF)</h3> 
+            <button type = "button" onclick="alert('File Downloaded')">Download</button>
+         </article>
+
+         <article class = "actioncard">
+            <h3> Open Telemetry Stream</h3> 
+            <button type = "button" onclick="alert('Opening')">Open</button>
+         </article>
+
+         <article class = "actioncard">
+            <h3>Update Patient Chart</h3> 
+            <button type = "button" onclick="alert('Updating...')">Update</button>
+         </article>
+    </section>
+</body>
+</html>
